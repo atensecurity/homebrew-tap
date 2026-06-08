@@ -7,7 +7,13 @@ class Thoth < Formula
   depends_on :macos
 
   def install
-    bin.install "bin/thoth", "bin/thothctl"
+    if File.exist?("bin/thoth") && File.exist?("bin/thothctl")
+      bin.install "bin/thoth", "bin/thothctl"
+    elsif File.exist?("thoth") && File.exist?("thothctl")
+      bin.install "thoth", "thothctl"
+    else
+      odie "Could not find thoth binaries in archive root or bin/ directory"
+    end
   end
 
   test do
