@@ -5,9 +5,9 @@
 class Thoth < Formula
   desc "Thoth MCP governance runtime and headless control-plane CLI"
   homepage "https://github.com/atensecurity/thoth"
-  version "0.3.7"
-  url "https://github.com/atensecurity/thoth/releases/download/v0.3.7/thoth-macos-universal.tar.gz"
-  sha256 "bc2c8de4342519f0d5696ada0417dc6c2a0968aca988aaebad04550a915e67ab"
+  version "0.3.8"
+  url "https://github.com/atensecurity/thoth/releases/download/v0.3.8/thoth-macos-universal.tar.gz"
+  sha256 "a104818e7cba0baf15b22214c189e1cc27bfc78c260260e78856943fb3e85d6c"
   depends_on :macos
 
   def install

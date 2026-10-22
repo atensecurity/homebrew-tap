@@ -34,6 +34,5 @@ Formula versions and checksums are updated by release automation via:
 
 - `.github/workflows/thoth-homebrew-tap-sync.yml`
 
-The formula template in this repo is:
-
-- `platform/public/homebrew-tap/Formula/thoth.rb.tmpl`
+The workflow updates the `version`, `url` and `sha256` lines of `Formula/thoth.rb` and opens a
+pull request here.
